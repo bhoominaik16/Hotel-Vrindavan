@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vrindavan Hotel and Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg text-primary-emphasis bg-warning border border-primary-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bold" href="#">Vrindavan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#amenities">Amenities</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#rooms">Rooms</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Reach Us
+                </a>
+                <ul class="dropdown-menu">
+                  <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#reviewModal">Review</button></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><button class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</button></li>
+                </ul>
+              </li>
+            </ul>
+              <button class="btn btn-dark" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Member Login</button>
+          </div>
+        </div>
+    </nav> 
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Member Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Are you a Golden Member?</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+      <img src="Images/main.jpg" class="img-fluid w-100" alt="...">
+      <hr class="featurette-divider my-5">
+
+      <!-- -------------------gallery------------------- -->
+      <div class="container" id="gallery">
+          <div id="carouselExampleCaptions" class="carousel slide mx-5 my-5">
+              <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="Images/g1.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>The Attracting Front View</h5>
+                    <p>The main entrance which catches the eyes</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="Images/g2.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>The Reception</h5>
+                    <p>The answer to all yor problems</p>                   
+                  </div>
+              </div>
+              <div class="carousel-item">
+                  <img src="Images/g5.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Dining and Restaurant</h5>
+                    <p>Amazing food varities including Indian, Contineantal, Chinese and much more</p>
+                  </div>
+              </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+      </div>
+      <hr class="featurette-divider my-5">
+
+      <!-- --------------about----------- -->
+
+      <div class="container" id="about">
+        <div class="row featurette border border-dark rounded-2 p-4 my-3 mx-5">
+            <div class="col-md-7 order-md-1">
+              <h2 class="featurette-heading fw-normal lh-1">Established in year 2015</h2>
+              <p class="lead">This project was imagined by Mr.XXX in year 2013 and it was brought in reality by Mr.YYY.Innaguration was carried on 15th of August 2015 by the hands of Prime Minster Mr. Narendra Modi. By the time, the popularity grew so wide that it is the most famous 5-star hotel of India.</p>
+            </div>
+            <div class="col-md-5 order-md-2">
+              <img src="Images/inaguration.jpeg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-2" alt="">
+            </div>
+          </div>
+          <div class="row featurette border border-dark rounded-2 p-4 my-3 mx-5">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Mr. XXX<h4>Founder of Vrindavan</h4></h2>
+              <p class="lead">Being a role model in the business of hotels, Vrindavan is one of the most successful projects f Mr. XXX. He has many more hotels across India and has a huge business in it. Planning to have business abroad, he is creating employment oppportunites for Indians abroad.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="Images/mr yyy.jpg" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto rounded-2" alt="">
+            </div>
+          </div>
+      </div>
+      <hr class="featurette-divider my-5">
+
+      <!-- ---------------------amenities--------- -->
+      <div class="container" id="amenities">
+        <h2 class="text-center">Amenities</h2>
+        <div class="mx-5 my-5 row gap-0 justify-content-center">
+            <div class="col border border-dark py-3 ">
+            <h4 class="text-center">Resort Facilities</h4>
+            <ul class="list">
+                <li>Baggage Storage</li>
+                <li>Banqueting</li>
+                <li>Bar</li>
+                <li>Concierge</li>
+                <li>Discovery Central</li>
+                <li>In-Room Dining</li>
+                <li>Spa</li>
+                <li>Kids Play Area</li>
+                <li>Laundry</li>
+                <li>Multi Cuisine Restaurant</li>
+                <li>On-Call Doctor</li>
+                <li>Parking (based on availability)</li>
+                <li>Power Backup</li>
+                <li>Travel Desk</li>
+                <li>Free Wi-Fi</li>
+                </ul>
+            </div>
+            <div class="col border border-dark py-3 ">
+            <h4 class="text-center">Room Amenities</h4>
+            <ul class="list">
+                <li>Tea Coffee Maker</li>
+                <li>Mini Fridge</li>
+                <li>LED Television</li>
+                <li>Room Heater (on request)</li>
+                <li>Hair Dryer</li>
+                </ul>
+            </div>
+            <div class="col border border-dark py-3 ">
+            <h4 class="text-center">Adventures</h4>
+            <ul class="list">
+                <li>Archery</li>
+                <li>Badminton</li>
+                <li>Bonfire/Party Games</li>
+                <li>Car Simulator Racing</li>
+                <li>Carrom Board</li>
+                <li>High-Low Rope Adventures</li>
+                <li>Karaoke</li>
+                <li>Library</li>
+                <li>Video Games</li>
+                <li>Virtual Realty Gaming</li>
+                <li>Wall Climbing</li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <hr class="featurette-divider my-5">
+
+      <!-- --------------rooms------------ -->
+
+      <div class="container-fluid row gap-0 column-gap-3 justify-content-center" id="rooms">
+        <div class="card p-3" style="width: 18rem;">
+            <img src="Images/g8.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">1RK Room</h5>
+                <p class="card-text">Affordable and comfortable room specially for couples provided with a king size bed, attached bathroom and toilet. A common room having a tv, couple dining table and sofa with a beautiful gallery view.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#room1">Tap to see more images.</button>
+            </div>
+        </div>
+        <div class="card p-3" style="width: 18rem;">
+            <img src="Images/g9.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">1BHK Room</h5>
+                <p class="card-text">This is a family room having a king size bed, separate as well as attached bathroom and toilet, small kitchen for cooking, a hall with a sofa-cum-bed, family dining table, tv, refrigerator.</p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#room2">Tap to see more images.</button>
+            </div>
+            
+        </div>
+        <div class="card p-3" style="width: 18rem;">
+            <img src="Images/g10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Premium 1BHK, 2BHK Room</h5>
+                <p class="card-text">Premium luxurious family rooms available in all types. Fully furnished rooms with all luxurious comfort. One of the best options in Vrindavan with beautifulgallery view. </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#room3">Tap to see more images.</button>
+            </div>
+        </div>
+      </div>
+
+    <!-- -------modals------- -->
+  
+    <!-- Modal room1-->
+    <div class="modal fade" id="room1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">1RK Room</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Images/g8.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/g81.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/g82.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal room2-->
+    <div class="modal fade" id="room2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">1BHK Room</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExample1" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Images/g9.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/g91.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/g92.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/g93.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Modal room3-->
+    <div class="modal fade" id="room3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Premium 1BHK, 2BHK Room</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div id="carouselExample2" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Images/g10.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/g11.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/g12.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <hr class="featurette-divider my-5">
+    <!-- ------------dropdown--------- -->
+
+<!-- Modal -->
+<div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="reviewModalLabel">Review Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="first-name middle-name last-name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput2" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput3" class="form-label">Contact Number</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="xxxxxxxxxx">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Write your review</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="contactModalLabel">Contact Us</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput4" class="form-label">Name</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="first-name middle-name last-name">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput5" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput6" class="form-label">Contact Number</label>
+          <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="xxxxxxxxxx">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea2" class="form-label">Mention the reason to contact</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
